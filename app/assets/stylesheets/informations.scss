@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body{
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+
+body *, ::before, ::after {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  color: #000;
+}
+
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+#news {
+  background-image: url(../images/news-bg.jpg);
+  height: 270px;
+  margin-bottom: 40px;
+}
+#news .page-title {
+  text-align: center;
+}
+.news-contents {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+article {
+  width: 100%;
+  padding: 10px 15px;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  /* NEWS */
+  .news-contents {
+      flex-direction: column;
+  }
+  #news .page-title {
+      margin-top: 30px;
+  }
+  article,
+  aside {
+      width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px;
+  }
+}
+
+  header {
+  background-color:#00a0dc;
+}
+
+  header .container {
+  min-height: 60px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 76px;
+  // background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: 53px;
+  background-position: 16px 10px;
+}
+
+  @media (min-width: 768px) {
+  header .container {
+      min-height: 100px;
+      padding-left: 120px;
+      background-size: 80px;
+      background-position: 30px 20px;
+  }
+}
+
+header .container h1,
+header .container h2 {
+  margin: 0;
+  color: #fff;
+  line-height: 1;
+}
+
+header .container h1 {
+  padding: 15px 0 7px 0;
+  margin: 10px auto;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+@media (min-width: 600px) {
+  header .container h1 {
+      padding: 30px 0 5px 0;
+      font-size: 24px;
+  }
+}
+
+footer {
+  background-color: #00a0dc;
+}
+
+
+
+
+/* ===== style.cssの上書き ===== */
+.container {
+    max-width: 100%;
+}
+img {
+    max-width: 100%;
+}
+
+/* ===== 機能の実装に必要なCSS ===== */
+
+/* ドロワーナビゲーションの必須スタイル */
+#nav {
+    position: fixed;
+    right: -270px;
+    top: 0;
+    width: 270px;
+    height: 100%;
+}
+
+/* ドロワーが開かれたときのスタイル */
+.show {
+    transform: translate3d(-270px, 0, 0);
+}
+
+/* 開く・閉じるアニメーション */
+#wrapper, #nav {
+    transition: transform 0.5s;
+}
+
+/* ===== ヘッダーにボタンを配置 ===== */
+.header {
+    padding: 16px 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-block {
+    flex: 1 1 auto;
+}
+.hamburger {
+    flex: 0 0 32px;
+    margin-top: 24px;
+    margin-left: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+/* ===== 装飾的なCSS ===== */
+
+/* メニュー */
+
+#nav {
+    padding: 24px 24px 0 24px;
+    background: #a7ddfe;
+    color: white;
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav li a {
+    display: block;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #114d60;
+    text-decoration: none;
+    color: black;
+}
+
+#nav li a:hover {
+    backcolor: #0bd;
+}
+
