@@ -1,0 +1,407 @@
+<body>
+  <h1 class="course" id="primary"><span class="heading">小学部</span>
+    <br>(中学部は<%= link_to 'こちらへ', courses_index_path(anchor: 'junior'), class: "move-in" %>)
+    <br>(個別部は<%= link_to 'こちらへ', courses_index_path(anchor: 'individual'), class: "move-in" %>)
+  </h1>
+
+  <p class="time"><br>時間：16:40〜18:30</p>
+  <p>(土曜の補修[<span class="nece">申込必須</span>]のみ、10:00〜11:55)</p>
+  <table border="1" bgcolor="lightgreen" width="100%" height="25" >
+    <tr>
+      <th width="18%">標準</th>
+      <th width="15.5%">月</th>
+      <th width="10%">火</th>
+      <th width="15.5%">水</th>
+      <th width="10%">木</th>
+      <th width="15.5%">金</th>
+      <th width="15.5%">土</th>
+    </tr>
+    <tr>
+      <td>第１週</td>
+      <td>国・算</td>
+      <td>ー</td>
+      <td>国・算</td>
+      <td>ー</td>
+      <td>国・算</td>
+      <td>補修</td>
+    </tr>
+    <tr>
+      <td>第２週</td>
+      <td>国・算</td>
+      <td>ー</td>
+      <td>国・算</td>
+      <td>ー</td>
+      <td>国・算</td>
+      <td>補修</td>
+    </tr>
+    <tr>
+      <td>第３週</td>
+      <td>国・算</td>
+      <td>ー</td>
+      <td>国・算</td>
+      <td>ー</td>
+      <td>国・算</td>
+      <td>補修</td>
+    </tr>
+    <tr>
+      <td>第４週</td>
+      <td>国・算</td>
+      <td>ー</td>
+      <td>国・算</td>
+      <td>ー</td>
+      <td>国・算</td>
+      <td>補修</td>
+    </tr>
+  </table>
+
+  <table border="1" bgcolor="lightgreen" width="100%" height="25" >
+    <tr>
+      <th width="18%">S標準</th>
+      <th width="11.83%">月</th>
+      <th width="15.5%">火</th>
+      <th width="11.83%">水</th>
+      <th width="15.5%">木</th>
+      <th width="11.83%">金</th>
+      <th width="15.5%">土</th>
+    </tr>
+    <tr>
+      <td>第１週</td>
+      <td>国<br>算</td>
+      <td>国・算<br>理・社</td>
+      <td>国<br>算</td>
+      <td>国・算<br>理・社</td>
+      <td>国<br>算</td>
+      <td>補修</td>
+    </tr>
+    <tr>
+      <td>第２週</td>
+      <td>国<br>算</td>
+      <td>国・算<br>理・社</td>
+      <td>国<br>算</td>
+      <td>国・算<br>理・社</td>
+      <td>国<br>算</td>
+      <td>補修</td>
+    </tr>
+    <tr>
+      <td>第３週</td>
+      <td>国<br>算</td>
+      <td>国・算<br>理・社</td>
+      <td>国<br>算</td>
+      <td>国・算<br>理・社</td>
+      <td>国<br>算</td>
+      <td>補修</td>
+    </tr>
+    <tr>
+      <td>第４週</td>
+      <td>国<br>算</td>
+      <td>国・算<br>理・社</td>
+      <td>国<br>算</td>
+      <td>国・算<br>理・社</td>
+      <td>国<br>算</td>
+      <td>補修</td>
+    </tr>
+  </table>
+
+  <h2>【標準コース】</h2>
+  <p>学年：小１〜小６</p>
+  <p>教科：国語・算数</p>
+  <br>
+  <h2>【スーパー標準(S標準)コース】</p>
+  <p>学年：小５〜小６</p>
+  <p>教科：国語・数学・理科・社会</p>
+  <p>(国語・数学は、月・火・水より選択)<br><br><br></p>
+
+  <p>【指導料】</p>
+  <table border="1" bgcolor="white" width="100%" height="25" >
+    <tr>
+      <th colspan="5">小１〜小６ 指導料(円)(内税)</th>
+    </tr>
+    <tr>
+      <td width="30%">出席日数(/週)</td>
+      <td width="17.5%">１日</td>
+      <td width="17.5%">２日</td>
+      <td width="17.5%">３日</td>
+      <td width="17.5%">４日</td>
+    </tr>
+    <tr>
+      <td>標準</td>
+      <td>5,280</td>
+      <td>8,800</td>
+      <td>12,100</td>
+      <td>ー</td>
+    </tr>
+    <tr>
+      <td>S標準</td>
+      <td>ー</td>
+      <td>8,800</td>
+      <td>12,100</td>
+      <td>14,300</td>
+    </tr>
+  </table><br><br><br>
+  
+  <h1 class="course" id="junior"><span class="heading">中学部</span>
+    <br>(小学部は<%= link_to 'こちらへ', courses_index_path(anchor: 'primary'), class: "move-in" %>)
+    <br>(個別部は<%= link_to 'こちらへ', courses_index_path(anchor: 'individual'), class: "move-in" %>)
+  </h1>
+  <p class="time"><br>時間：19:30〜21:30</p>
+  <p>(中１水曜の英語補修のみ、19:30〜20:45)</p>
+  <table border="1" bgcolor="lightgreen" width="100%" height="25" >
+    <tr>
+      <th width="20%">中１</th>
+      <th width="12%">月</th>
+      <th width="12%">火</th>
+      <th width="20%">水</th>
+      <th width="12%">木</th>
+      <th width="12%">金</th>
+      <th width="12%">土</th>
+    </tr>
+    <tr>
+      <td>第１週</td>
+      <td>英語</td>
+      <td>ー</td>
+      <td>英語補修</td>
+      <td>ー</td>
+      <td>ー</td>
+      <td>数学</td>
+    </tr>
+    <tr>
+      <td>第２週</td>
+      <td>英語</td>
+      <td>ー</td>
+      <td>英語補修</td>
+      <td>ー</td>
+      <td>ー</td>
+      <td>数学</td>
+    </tr>
+    <tr>
+      <td>第３週</td>
+      <td>英語</td>
+      <td>ー</td>
+      <td>英語補修</td>
+      <td>ー</td>
+      <td>ー</td>
+      <td>数学</td>
+    </tr>
+    <tr>
+      <td>第４週</td>
+      <td>英語</td>
+      <td>ー</td>
+      <td>英語補修</td>
+      <td>ー</td>
+      <td>ー</td>
+      <td>数学</td>
+    </tr>
+  </table>
+
+  <table border="1" bgcolor="lightgreen" width="100%" height="25" >
+    <tr>
+      <th width="20%">中２</th>
+      <th width="16%">月</th>
+      <th width="16%">火</th>
+      <th width="16%">水</th>
+      <th width="16%">木</th>
+      <th width="16%">金</th>
+    </tr>
+    <tr>
+      <td>第１週</td>
+      <td>英語</td>
+      <td>ー</td>
+      <td>数学</td>
+      <td>ー</td>
+      <td>ー</td>
+    </tr>
+    <tr>
+      <td>第２週</td>
+      <td>英語</td>
+      <td>ー</td>
+      <td>数学</td>
+      <td>ー</td>
+      <td>ー</td>
+    </tr>
+    <tr>
+      <td>第３週</td>
+      <td>英語</td>
+      <td>ー</td>
+      <td>数学</td>
+      <td>ー</td>
+      <td>ー</td>
+    </tr>
+    <tr>
+      <td>第４週</td>
+      <td>英語</td>
+      <td>ー</td>
+      <td>数学</td>
+      <td>ー</td>
+      <td>ー</td>
+    </tr>
+  </table>
+
+  <table border="1" bgcolor="lightgreen" width="100%" height="25" >
+    <tr>
+      <th width="20%">中３</th>
+      <th width="16%">月</th>
+      <th width="16%">火</th>
+      <th width="16%">水</th>
+      <th width="16%">木</th>
+      <th width="16%">金</th>
+    </tr>
+    <tr>
+      <td>第１週</td>
+      <td>ー</td>
+      <td>英語</td>
+      <td>ー</td>
+      <td>数学</td>
+      <td>ー</td>
+    </tr>
+    <tr>
+      <td>第２週</td>
+      <td>ー</td>
+      <td>英語</td>
+      <td>ー</td>
+      <td>数学</td>
+      <td>ー</td>
+    </tr>
+    <tr>
+      <td>第３週</td>
+      <td>ー</td>
+      <td>英語</td>
+      <td>ー</td>
+      <td>数学</td>
+      <td>ー</td>
+    </tr>
+    <tr>
+      <td>第４週</td>
+      <td>ー</td>
+      <td>英語</td>
+      <td>ー</td>
+      <td>数学</td>
+      <td>ー</td>
+    </tr>
+  </table>
+
+  <h2>【補習】</h2>
+  <p>土曜日：10:00〜11:55</p>
+  <p>学年：中１〜中３</p>
+  <p class="nece">※ 事前にお申し込みください<br>(メール・電話・口頭)<br><br><br></p>
+
+  <p>【指導料】</p>
+  <table border="1" bgcolor="white" width="100%" height="25" >
+    <tr>
+      <th width="30%">中１・２・３</th>
+      <th width="35%">月間授業時限数</th>
+      <th width="35%">指導料(円)(内税)</th>
+    </tr>
+    <tr>
+      <td>数学</td>
+      <td>２時限 × ４回</td>
+      <td>8,250</td>
+    </tr>
+    <tr>
+      <td>英語</td>
+      <td>２時限 × ４回</td>
+      <td>8,250</td>
+    </tr>
+    <tr>
+      <td>数学・英語</td>
+      <td>２時限 × ８回</td>
+      <td>15,400</td>
+    </tr>
+  </table><br>
+
+  <table border="1" bgcolor="white" width="100%" height="25" >
+    <tr>
+      <th width="30%">中３(７月以降)</th>
+      <th width="35%">月間授業時限数</th>
+      <th width="35%">指導料(円)(内税)</th>
+    </tr>
+    <tr>
+    <tr>
+      <td>数学</td>
+      <td>２時限 × ４回</td>
+      <td>8,250</td>
+    </tr>
+    <tr>
+      <td>英語</td>
+      <td>２時限 × ４回</td>
+      <td>8,250</td>
+    </tr>
+      <td>理科</td>
+      <td>２時限 × ４回</td>
+      <td>8,250</td>
+    </tr>
+    <tr>
+      <td>社会</td>
+      <td>２時限 × ４回</td>
+      <td>8,250</td>
+    </tr>
+    <tr>
+      <td>国語</td>
+      <td>２時限 × ４回</td>
+      <td>8,250</td>
+    </tr>
+    <tr>
+      <td>５教科</td>
+      <td>２時限 × 12回</td>
+      <td>23,100</td>
+    </tr>
+  </table>
+  <p>※ １時限：55分間 <br><br><br><br><br></p>
+
+  <h1 class="course" id="individual"><span class="heading">個別部</span>
+    <br>(小学部は<%= link_to 'こちらへ', courses_index_path(anchor: 'primary'), class: "move-in" %>)
+    <br>(中学部は<%= link_to 'こちらへ', courses_index_path(anchor: 'junior'), class: "move-in" %>)
+  </h1>
+  <p><br>【指導料】<br>(90分 × ４回分 / １ヶ月)</p>
+  <p><br>ーー小・中学生コースーー</p>
+  <table border="1" bgcolor="white" width="100%" height="25" >
+    <tr>
+      <th width="30%">人数</th>
+      <th width="70%">料金</th>
+    </tr>
+    <tr>
+      <td>１名</td>
+      <td>12,375円</td>
+    </tr>
+    <tr>
+      <td>２名</td>
+      <td>9,900円</td>
+    </tr>
+  </table>
+  
+  <p><br>ーー高校１・２年生コースーー</p>
+  <table border="1" bgcolor="white" width="100%" height="25" >
+    <tr>
+      <th width="30%">人数</th>
+      <th width="70%">料金</th>
+    </tr>
+    <tr>
+      <td>１名</td>
+      <td>12,375円</td>
+    </tr>
+    <tr>
+      <td>２名</td>
+      <td>10,315円</td>
+    </tr>
+  </table>
+  
+  <p><br>ーー高校３年生コースーー</p>
+  <table border="1" bgcolor="white" width="100%" height="25" >
+    <tr>
+      <th width="30%">人数</th>
+      <th width="70%">料金</th>
+    </tr>
+    <tr>
+      <td>１名</td>
+      <td>13,615円</td>
+    </tr>
+    <tr>
+      <td>２名</td>
+      <td>12,145円</td>
+    </tr>
+  </table>
+
+  <p><br>【教科】<br>数学・英語・国語・理科</p>
+  <p><br>【時間】<br>14:30〜21:30までの中から90分間を選択<br></p>
+  <p class="nece"><br> ※原則として、<br>欠席分については返金は致しません<br><br><br></p>
+
+</body>
