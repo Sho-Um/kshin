@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
-    <title>Kshin</title>
+    <title>K進ゼミナール</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="description" content="K進ゼミナール公式ホームページ">
+    <%# <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %> 
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
   </head>
 
   <body>
+      <div id="wrapper">
+        <header>
+        <div class="container">
+          <div class="title-block">
+            <h1>K進ゼミナール</h1>
+          </div>
+          <div class="hamburger" id="open_nav">
+            <%= image_tag "hamburger"%>
+          </div>
+        </div><!-- /.container -->
+        </header>
+      </div><!-- /.wrapper -->
     <%= yield %>
+      <footer>
+          <div class="wrapper">
+              <p><small>&copy; 2021 K-shin seminar</small></p>
+          </div>
+      </footer>
+      <nav id="nav">
+        <div class="logo">
+        </div>
+      <ul>
+        <li><%= link_to "トップ", informations_index_path, method: :get %></li>
+        <li><%= link_to "ごあいさつ", greetings_index_path, method: :get %></li>
+        <li><a href="#">入塾について</a></li>
+        <li><%= link_to "コース", courses_index_path, method: :get %></li>
+        <li><%= link_to "学習指針", guidelines_index_path, method: :get%></li>
+        <li><a href="#">学習予定</a></li>
+        <li><a href="#">合格実績</a></li>
+        <li><a href="#">論理エンジンについて</a></li>
+        <li><a href="#">模擬テストについて</a></li>
+        <li><a href="#">クレペリンテストについて</a></li>
+        <li><a href="#">おじさんのつぶやき</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="#">(塾長専用ページ)</a></li>
+      </ul>
+      </nav>
   </body>
 </html>
