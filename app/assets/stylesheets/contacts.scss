@@ -1,3 +1,37 @@
-// Place all the styles related to the contacts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#location {
+  padding: 4% 0;
+}
+#location .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.location-info {
+  width: 22%;
+}
+.location-info p {
+  padding: 12px 10px;
+}
+.location-map {
+  width: 74%;
+}
+
+
+/* iframe */
+iframe {
+  width: 100%;
+}
+
+/* モバイル版
+------------------------------- */
+@media (max-width: 600px) {
+
+#location .wrapper, {
+    flex-direction: column;
+}
+
+.location-info,
+.location-map, {
+    width: 100%;
+}
+
+}
