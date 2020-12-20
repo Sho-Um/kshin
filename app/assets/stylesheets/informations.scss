@@ -163,6 +163,11 @@ img {
 }
 
 /* ===== ヘッダーにボタンを配置 ===== */
+
+header {
+  
+}
+
 .header {
     padding: 16px 0;
 }
@@ -172,14 +177,28 @@ header .container {
 }
 
 .title-block {
-    flex: 1 1 auto;
+    // flex: 1 1 auto;
+    text-align: center;
+    margin-left: 1.25rem;
 }
 .hamburger {
+    height: 5rem;
+    width: 5rem;
     flex: 0 0 32px;
     margin-top: 24px;
     margin-left: 16px;
     text-align: center;
     color: #fff;
+    position:fixed;
+    right:0;
+    padding-right: 0.6rem;
+}
+
+@media (max-width: 600px) {
+  .hamburger{
+    height: 3.3rem;
+    width: 3.3rem;
+  }
 }
 
 /* ===== 装飾的なCSS ===== */
