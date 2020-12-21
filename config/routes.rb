@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'mussitations/index'
+  get 'plans/index'
+  get 'kraepelins/index'
+  get 'trials/index'
+  get 'logics/index'
   get 'enters/index'
   get 'contacts/index'
   get 'results/index'
